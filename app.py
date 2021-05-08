@@ -8,7 +8,7 @@ import numpy as np
 app = Flask(__name__)
 api = Api(app)
 
-classifier = joblib.load('/content/classifier.pkl')
+classifier = joblib.load('classifier.pkl')
 vectorizer = joblib.load('vectorizer.pkl')
 st = nltk.stem.SnowballStemmer('english')
 
